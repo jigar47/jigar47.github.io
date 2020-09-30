@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon">
+        <meta charset="utf-8">
+        <meta content="width=1440, maximum-scale=1.0" name="viewport">
+        <style>
+            .anima-component-wrapper a,
+            .anima-screen a {
+                text-decoration     : none;
+            }
+            .anima-flexbox-container a {
+                line-height         : 0;
+            }
+            .anima-full-width-a {
+                width               : 100%;
+            }
+            .anima-full-height-a {
+                height              : 100%;
+            }
+            .anima-screen textarea:focus,
+            .anima-screen input:focus {
+                outline             : none;
+            }
+            .anima-screen *,
+            .anima-component-wrapper * {
+                box-sizing          : border-box;
+            }
+            .anima-screen div {
+                -webkit-text-size-adjust: none;
+            }
+            .anima-container-center-vertical,
+            .anima-container-center-horizontal {
+                pointer-events      : none;
+                display             : flex;
+                flex-direction      : row;
+                padding             : 0;
+                margin              : 0;
+            }
+            .anima-container-center-vertical {
+                align-items         : center;
+                height              : 100%;
+            }
+            .anima-container-center-horizontal {
+                justify-content     : center;
+                width               : 100%;
+            }
+            .anima-container-center-vertical > *,
+            .anima-container-center-horizontal > * {
+                pointer-events      : auto;
+                flex-shrink         : 0;
+            }
+            .anima-component-wrapper,
+            .anima-screen {
+                overflow-wrap       : break-word;
+                word-wrap           : break-word;
+                word-break          : break-all;
+                word-break          : break-word;
+            }
+            .anima-auto-animated div {
+                opacity             : 0;
+                position            : absolute;
+                --anima-z-index     : -1;
+            }
+            .anima-auto-animated .anima-container-center-vertical,
+            .anima-auto-animated .anima-container-center-horizontal {
+                opacity             : 1;
+            }
+            .anima-overlay {
+                position            : absolute;
+                opacity             : 0;
+                display             : none;
+                top                 : 0;
+                width               : 100%;
+                height              : 100%;
+                position            : fixed;
+            }
+            .anima-animate-appear {
+                opacity             : 0;
+                display             : block;
+                animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+            }
+            .anima-animate-disappear {
+                opacity             : 1;
+                display             : block;
+                animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+            }
+            .anima-animate-nodelay {
+                animation-delay     : 0s;
+            }
+            @keyframes anima-reveal {
+                from {
+                    opacity             : 0;
+                }
+                to {
+                    opacity             : 1;
+                }
+            }
+            .align-self-flex-start {
+                align-self          : flex-start;
+            }
+            .align-self-flex-end {
+                align-self          : flex-end;
+            }
+            .align-self-flex-center {
+                align-self          : center;
+            }
+            .anima-flexbox-container a {
+                line-height         : 0;
+            }
+            .anima-valign-text-middle {
+                display             : flex;
+                flex-direction      : column;
+                justify-content     : center;
+            }
+            .anima-valign-text-bottom {
+                display             : flex;
+                flex-direction      : column;
+                justify-content     : flex-end;
+            }
+            .anima-component-wrapper,
+            .anima-component-wrapper * {
+                pointer-events      : none;
+            }
+            .anima-component-wrapper a *,
+            .anima-component-wrapper a,
+            .anima-component-wrapper input,
+            .anima-component-wrapper video,
+            .anima-component-wrapper iframe,
+            .anima-listeners-active,
+            .anima-listeners-active * {
+                pointer-events      : auto;
+            }
+            .anima-hidden,
+            .anima-hidden * {
+                visibility          : hidden;
+                pointer-events      : none;
+            }
+            .anima-smart-layers-pointers,
+            .anima-smart-layers-pointers * {
+                pointer-events      : auto;
+                visibility          : visible;
+            }
+            .anima-component-wrapper.anima-not-ready,
+            .anima-component-wrapper.anima-not-ready * {
+                visibility          : hidden !important;
+            }
+            .anima-listeners-active-click,
+            .anima-listeners-active-click * {
+                cursor              : pointer;
+            }
+            @font-face {
+                font-family
+                :
+                 
+                "PoppinsLatin-Bold"
+                ;
+                
+                                            
+                src
+                :
+                 
+                url("")
+                 
+                format("truetype")
+                ;
+            }
+            @font-face {
+                font-family
+                :
+                 
+                "PoppinsLatin-Medium"
+                ;
+                
+                                            
+                src
+                :
+                 
+                url("")
+                 
+                format("truetype")
+                ;
+            }
+            @font-face {
+                font-family
+                :
+                 
+                "PoppinsLatin-SemiBold"
+                ;
+                
+                                            
+                src
+                :
+                 
+                url("")
+                 
+                format("truetype")
+                ;
+            }
+            @import url("https://fonts.googleapis.com/css?family=Poppins:600,700");
+            /* ANIMA screen - darkdesktophd */
+            
+            .darkdesktophd {
+                background-color
+                :
+                rgba(0,0,0,1.0)
+                ;
+                
+                  
+                height
+                :
+                100vh
+                ;
+                
+                  
+                margin
+                :
+                0px
+                ;
+                
+                  
+                min-height
+                :
+                866px
+                ;
+                
+                  
+                min-width
+                :
+                1440px
+                ;
+                
+                  
+                overflow
+                :
+                hidden
+                ;
+                
+                  
+                position
+                :
+                relative
+                ;
+                
+                  
+                width
+                :
+                100%
+                ;
+            }
+            .darkdesktophd .-ZV8xDl {
+                letter-spacing      : 0.00px;
+            }
+            .darkdesktophd .-ZV8xDl {
+                font-family         : "Poppins-Bold", Helvetica, Arial, serif;
+                letter-spacing      : 0.00px;
+            }
+            .darkdesktophd .-ZV8xDl {
+                letter-spacing      : 0.00px;
+            }
+            .darkdesktophd .a9amio-copy-VlyhaJ {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                height              : auto;
+                margin              : 0 0 0 30px;
+                pointer-events      : auto;
+                position            : relative;
+                text-align          : left;
+                transition          : all 0.2s ease-in-out;
+                white-space         : nowrap;
+                width               : 59px;
+            }
+            .darkdesktophd .a9amio-copy-VlyhaJ:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .about-india-nic-u2192-ZV8xDl {
+                background-color    : rgba(255,255,255,0);
+                color               : var(--white);
+                font-family         : "Poppins-SemiBold", Helvetica, Arial, serif;
+                font-size           : 20.0px;
+                height              : auto;
+                left                : 31px;
+                letter-spacing      : -0.67px;
+                line-height         : 30.0px;
+                position            : absolute;
+                text-align          : left;
+                top                 : 24px;
+                white-space         : nowrap;
+                width               : auto;
+            }
+            .darkdesktophd .auto-flex-sx9X19 {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : flex;
+                flex-direction      : column;
+                flex-shrink         : 0;
+                height              : auto;
+                justify-content     : flex-start;
+                margin-bottom       : 8.0px;
+                margin-left         : 1px;
+                position            : relative;
+                width               : 4px;
+            }
+            .darkdesktophd .auto-flex1-XxVWrE {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : flex;
+                flex-direction      : column;
+                flex-shrink         : 0;
+                height              : auto;
+                justify-content     : flex-start;
+                margin-bottom       : 8.0px;
+                position            : relative;
+                width               : 4px;
+            }
+            .darkdesktophd .button-india-nic-cgmJkX {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                height              : 76px;
+                margin              : 42px 0 0 0;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 234px;
+            }
+            .darkdesktophd .button-india-nic-cgmJkX:hover {
+                transform           : scale(0.95);
+            }
+            .darkdesktophd .cohortwork-XTWcq1 {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                height              : auto;
+                margin              : 0 0 0 30px;
+                pointer-events      : auto;
+                position            : relative;
+                text-align          : left;
+                transition          : all 0.2s ease-in-out;
+                white-space         : nowrap;
+                width               : 97px;
+            }
+            .darkdesktophd .cohortwork-XTWcq1:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .director-global-sal-8M9zLJ {
+                background-color    : rgba(255,255,255,0);
+                color               : var(--white);
+                flex-shrink         : 0;
+                font-family         : "PoppinsLatin-Bold", Helvetica, Arial, serif;
+                font-size           : 22.0px;
+                height              : auto;
+                letter-spacing      : -0.80px;
+                line-height         : 33.0px;
+                margin-bottom       : -2px;
+                margin-top          : 0px;
+                min-height          : 31px;
+                min-width           : 235px;
+                position            : relative;
+                text-align          : left;
+                white-space         : nowrap;
+                width               : auto;
+            }
+            .darkdesktophd .every-brand-has-stor-sTocGH {
+                background-color    : rgba(255,255,255,0);
+                color               : var(--white);
+                font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+                font-size           : 15.0px;
+                height              : auto;
+                letter-spacing      : -0.67px;
+                line-height         : 23.0px;
+                margin              : 42px 0 0 0;
+                position            : relative;
+                text-align          : left;
+                width               : 499px;
+            }
+            .darkdesktophd .facebook-pETBu8 {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                flex-shrink         : 0;
+                height              : 31px;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 32px;
+            }
+            .darkdesktophd .facebook-pETBu8:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .fb-icon-xPM9RJ {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 32px;
+                justify-content     : flex-start;
+                margin              : 0 0 0 30px;
+                overflow            : hidden;
+                position            : relative;
+                width               : 32px;
+            }
+            .darkdesktophd .group-2-yJDjHY {
+                align-items         : center;
+                background-color    : rgba(255,255,255,0);
+                display             : flex;
+                flex-direction      : row;
+                height              : 32px;
+                justify-content     : flex-start;
+                margin              : 42px 0 0 0;
+                opacity             : 0.53;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .group-3-iFKazk {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 642px;
+                justify-content     : flex-start;
+                left                : 125px;
+                position            : absolute;
+                top                 : 103px;
+                width               : auto;
+            }
+            .darkdesktophd .group-4-2SgBKU {
+                align-items         : center;
+                background-color    : rgba(255,255,255,0);
+                display             : flex;
+                flex-direction      : row;
+                height              : 24px;
+                justify-content     : flex-start;
+                margin              : 0;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .group-4-Xn4cxL {
+                background-color    : rgba(255,255,255,0);
+                height              : 76px;
+                left                : 0px;
+                pointer-events      : auto;
+                position            : relative;
+                top                 : 0px;
+                transition          : all 0.2s ease-in-out;
+                width               : 234px;
+            }
+            .darkdesktophd .group-4-Xn4cxL:hover {
+                transform           : scale(0.95);
+            }
+            .darkdesktophd .group-4-xEJipu {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : flex;
+                flex-direction      : column;
+                height              : auto;
+                justify-content     : flex-start;
+                margin              : 0;
+                position            : relative;
+                width               : 347px;
+            }
+            .darkdesktophd .group-5-hx9j3X {
+                background-color    : rgba(255,255,255,0);
+                bottom              : -12px;
+                display             : block;
+                height              : 912px;
+                position            : absolute;
+                right               : 0px;
+                width               : 54.31%;
+                opacity             : 0;
+            }
+            .darkdesktophd .group-5-hx9j3X.bp1-anima-animate-enter1 {
+                animation           : bp1-anima-animate-enter1-frames 1.50s ease-in-out 0.00s 1 normal forwards;
+                display             : block;
+                opacity             : 0;
+            }
+            .darkdesktophd .group-6-auP9FG {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 642px;
+                position            : relative;
+                width               : 500px;
+            }
+            .darkdesktophd .group-xWfRCW {
+                background-color    : rgba(255,255,255,0);
+                background-image    : url("dark---desktop-hd-oval@2x.png");
+                background-size     : 100% 100%;
+                bottom              : 42px;
+                cursor              : pointer;
+                height              : 72px;
+                pointer-events      : auto;
+                position            : fixed;
+                right               : 28px;
+                transition          : all 0.2s ease-in-out;
+                width               : 72px;
+            }
+            .darkdesktophd .group-xWfRCW:hover {
+                transform           : scale(1.1);
+            }
+            .darkdesktophd .idea-Y8hNjB {
+                align-items         : center;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 32px;
+                justify-content     : flex-start;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .img_0735-y9qFmI {
+                background-color    : rgba(255,255,255,0);
+                bottom              : 12px;
+                display             : block;
+                height              : 900px;
+                position            : absolute;
+                right               : 0px;
+                width               : 793px;
+                opacity             : 0;
+            }
+            .darkdesktophd .img_0735-y9qFmI.bp1-anima-animate-enter {
+                animation           : bp1-anima-animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+                display             : block;
+                opacity             : 0;
+            }
+            .darkdesktophd .india-niccom-copy-2-l37dXz {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                height              : auto;
+                margin              : 0;
+                pointer-events      : auto;
+                position            : relative;
+                text-align          : left;
+                transition          : all 0.2s ease-in-out;
+                white-space         : nowrap;
+                width               : 111px;
+            }
+            .darkdesktophd .india-niccom-copy-2-l37dXz:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .instagram-bcktVo {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                flex-shrink         : 0;
+                height              : 32px;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 32px;
+            }
+            .darkdesktophd .instagram-bcktVo:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .instagram-icon-Ux9PS4 {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 32px;
+                justify-content     : flex-start;
+                margin              : 0 0 0 30px;
+                overflow            : hidden;
+                position            : relative;
+                width               : 32px;
+            }
+            .darkdesktophd .jigar-panchal-PsDt54 {
+                background-color    : rgba(255,255,255,0);
+                color               : var(--red-orange);
+                flex-shrink         : 0;
+                font-family         : "PoppinsLatin-SemiBold", Helvetica, Arial, serif;
+                font-size           : 55.0px;
+                height              : auto;
+                letter-spacing      : -3.00px;
+                line-height         : 83.0px;
+                margin-bottom       : -6px;
+                min-height          : 77px;
+                min-width           : 356px;
+                position            : relative;
+                text-align          : left;
+                white-space         : nowrap;
+                width               : auto;
+            }
+            .darkdesktophd .linked-in-icon-xsA6Er {
+                align-items         : center;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 28px;
+                justify-content     : flex-start;
+                margin              : 0;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .linked-in-oOMmtS {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                flex-shrink         : 0;
+                height              : 28px;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 30px;
+            }
+            .darkdesktophd .linked-in-oOMmtS:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .overlap-group-xQ9ucY {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 32px;
+                margin-left         : 1px;
+                position            : relative;
+                width               : 22px;
+            }
+            .darkdesktophd .path-9glFJM {
+                background-color    : rgba(255,255,255,0);
+                height              : 8px;
+                left                : 10px;
+                position            : absolute;
+                top                 : 4px;
+                width               : 8px;
+            }
+            .darkdesktophd .path-Pynoi6 {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 3px;
+                margin-left         : 1px;
+                margin-top          : 3px;
+                position            : relative;
+                width               : 3px;
+            }
+            .darkdesktophd .path-R19EU6 {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 2px;
+                margin-top          : 3px;
+                position            : relative;
+                width               : 4px;
+            }
+            .darkdesktophd .path-TD0p3x {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 3px;
+                margin-left         : 1px;
+                position            : relative;
+                width               : 3px;
+            }
+            .darkdesktophd .path-UdBrCP {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 3px;
+                position            : relative;
+                width               : 3px;
+            }
+            .darkdesktophd .path-hnwaHn {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 3px;
+                margin-top          : 3px;
+                position            : relative;
+                width               : 3px;
+            }
+            .darkdesktophd .path-r7D7kh {
+                background-color    : rgba(255,255,255,0);
+                flex-shrink         : 0;
+                height              : 2px;
+                margin-top          : 3px;
+                position            : relative;
+                width               : 4px;
+            }
+            .darkdesktophd .product-hunt-QMe8FJ {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                flex-shrink         : 0;
+                height              : 32px;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 32px;
+            }
+            .darkdesktophd .product-hunt-QMe8FJ:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .product-hunt-icon-wTLNEm {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 32px;
+                justify-content     : flex-start;
+                margin              : 0 0 0 30px;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .rectangle-JSEgeI {
+                background-color    : rgba(255,255,255,0);
+                height              : calc(100.00% - 12px);
+                left                : 0px;
+                position            : absolute;
+                top                 : 12px;
+                width               : 33.67%;
+            }
+            .darkdesktophd .rectangle-RIiLvP {
+                background-color    : var(--red-orange);
+                border-radius       : 38px;
+                height              : 76px;
+                left                : 0px;
+                position            : absolute;
+                top                 : 0px;
+                width               : 234px;
+            }
+            .darkdesktophd .shape-fessoy {
+                background-color    : rgba(255,255,255,0);
+                height              : 32px;
+                left                : 0px;
+                position            : absolute;
+                top                 : 0px;
+                width               : 22px;
+            }
+            .darkdesktophd .stacked-group-NL8nam {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                display             : flex;
+                flex-direction      : column;
+                height              : auto;
+                justify-content     : flex-start;
+                left                : 0px;
+                position            : absolute;
+                top                 : 0px;
+                width               : 500px;
+            }
+            .darkdesktophd .twitter-JCqKaK {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                flex-shrink         : 0;
+                height              : 27px;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 32px;
+            }
+            .darkdesktophd .twitter-JCqKaK:hover {
+                transform           : scale(0.9);
+            }
+            .darkdesktophd .twitter-icon-sx2d3Y {
+                align-items         : center;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 27px;
+                justify-content     : flex-start;
+                margin              : 0 0 0 30px;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .website-link-group-KMqGZj {
+                align-items         : center;
+                background-color    : rgba(255,255,255,0);
+                display             : flex;
+                flex-direction      : row;
+                height              : 24px;
+                justify-content     : flex-start;
+                left                : 0px;
+                position            : absolute;
+                top                 : 618px;
+                width               : auto;
+            }
+            .darkdesktophd .whatsapp-icon-ncK4Wc {
+                align-items         : flex-start;
+                background-color    : rgba(255,255,255,0);
+                box-sizing          : border-box;
+                display             : inline-flex;
+                flex-direction      : row;
+                height              : 32px;
+                justify-content     : flex-start;
+                margin              : 0 0 0 30px;
+                position            : relative;
+                width               : auto;
+            }
+            .darkdesktophd .whatsapp-xoVzdz {
+                background-color    : rgba(255,255,255,0);
+                cursor              : pointer;
+                flex-shrink         : 0;
+                height              : 32px;
+                pointer-events      : auto;
+                position            : relative;
+                transition          : all 0.2s ease-in-out;
+                width               : 32px;
+            }
+            .darkdesktophd .whatsapp-xoVzdz:hover {
+                transform           : scale(0.9);
+            }
+            .font-class-1 {
+                color               : var(--red-orange);
+                font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+                font-size           : 17.0px;
+                letter-spacing      : -0.57px;
+                line-height         : 26.0px;
+            }
+            :root {
+                --red-orange        : rgba(241,60,49,1.0);
+                --white             : rgba(255,255,255,1.0);
+            }
+            @keyframes bp1-anima-animate-enter-frames {
+                from {
+                    opacity             : 0;
+                }
+                to {
+                    opacity             : 1;
+                }
+            }
+            @keyframes bp1-anima-animate-enter1-frames {
+                from {
+                    opacity             : 0;
+                }
+                to {
+                    opacity             : 1;
+                }
+            }
+        </style>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author">
+    </head>
+    <body style="margin: 0;background: rgba(0,0,0,1.0);">
+        <input id="anPageName" name="page" type="hidden" value="darkdesktophd">
+        <div class="darkdesktophd anima-screen">
+            <div class="group-3-iFKazk anima-flexbox-container">
+                <div class="group-6-auP9FG">
+                    <div class="website-link-group-KMqGZj">
+                        <div class="group-4-2SgBKU">
+                            <a href="https://www.indianic.com/?utm_source=SKM-Website" target="_blank">
+                                <div anima-show-on-scroll="" class="india-niccom-copy-2-l37dXz font-class-1 anima-smart-layers-pointers">
+                                    IndiaNIC.com
+                                </div>
+                            </a>
+                            <a href="https://www.9am.io/?utm_source=SKM-Website" target="_blank">
+                                <div anima-show-on-scroll="" class="a9amio-copy-VlyhaJ font-class-1 anima-smart-layers-pointers">
+                                    9am.io
+                                </div>
+                            </a>
+                            <a href="https://www.cohort.work/?utm_source=SKM-Website" target="_blank">
+                                <div anima-show-on-scroll="" class="cohortwork-XTWcq1 font-class-1 anima-smart-layers-pointers">
+                                    cohort.work
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stacked-group-NL8nam">
+                        <div class="group-4-xEJipu anima-flexbox-container">
+                            <div class="jigar-panchal-PsDt54">
+                                Jigar Panchal
+                            </div>
+                            <div class="director-global-sal-8M9zLJ">
+                                Director, Global Sales
+                            </div>
+                        </div>
+                        <div class="group-2-yJDjHY">
+                            <div class="linked-in-icon-xsA6Er anima-flexbox-container">
+                                <div class="anima-container-center-vertical">
+                                    <a href="http://www.linkedin.com/in/jigarpanchal" target="_blank">
+                                        <img class="linked-in-oOMmtS anima-smart-layers-pointers" src="dark---desktop-hd-linkedin@2x.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="fb-icon-xPM9RJ anima-flexbox-container">
+                                <a href="https://www.facebook.com/jigar47" target="_blank">
+                                    <img class="facebook-pETBu8 anima-smart-layers-pointers" src="dark---desktop-hd-facebook@2x.png">
+                                </a>
+                            </div>
+                            <div class="twitter-icon-sx2d3Y anima-flexbox-container">
+                                <div class="anima-container-center-vertical">
+                                    <a href="https://www.twitter.com/jigar47" target="_blank">
+                                        <img class="twitter-JCqKaK anima-smart-layers-pointers" src="dark---desktop-hd-twitter@2x.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="instagram-icon-Ux9PS4 anima-flexbox-container">
+                                <a href="https://www.instagram.com/jigar47" target="_blank">
+                                    <img class="instagram-bcktVo anima-smart-layers-pointers" src="dark---desktop-hd-instagram@2x.png">
+                                </a>
+                            </div>
+                            <div class="whatsapp-icon-ncK4Wc anima-flexbox-container">
+                                <a href="https://wa.me/919924009060" target="_blank">
+                                    <img class="whatsapp-xoVzdz anima-smart-layers-pointers" src="dark---desktop-hd-whatsapp@2x.png">
+                                </a>
+                            </div>
+                            <div class="product-hunt-icon-wTLNEm anima-flexbox-container">
+                                <a href="https://www.producthunt.com/@jigar47" target="_blank">
+                                    <img class="product-hunt-QMe8FJ anima-smart-layers-pointers" src="dark---desktop-hd-producthunt@2x.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="every-brand-has-stor-sTocGH">
+                            Every brand has stories to tell&mdash;stories that will not only engage, inform, surprise, delight, and impact their audience, but that will also deliver on measurable business goals. I enable enterprises and startups to have such brand stories come to life with stunning web and mobile apps.
+                        </div>
+                        <a href="https://www.indianic.com/?utm_source=jigar-website" target="_blank">
+                            <div class="button-india-nic-cgmJkX anima-smart-layers-pointers">
+                                <div class="group-4-Xn4cxL anima-smart-layers-pointers">
+                                    <div class="rectangle-RIiLvP">
+                                    </div>
+                                    <div class="about-india-nic-u2192-ZV8xDl">
+                                        <span class="-ZV8xDl">
+                                            About IndiaNIC
+                                        </span>
+                                        <span class="-ZV8xDl">
+                                            &rarr;
+                                        </span>
+                                        <span class="-ZV8xDl">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div anima-show-on-scroll="" class="group-5-hx9j3X bp1-anima-animate-enter1">
+                <img anima-show-on-scroll="" class="img_0735-y9qFmI bp1-anima-animate-enter" src="dark---desktop-hd-img0735.png">
+                <img class="rectangle-JSEgeI" src="dark---desktop-hd-rectangle.png">
+            </div>
+            <a href="anima://page/AFC71123-6B78-43BD-9CBF-A5C65877A002">
+                <div class="group-xWfRCW anima-smart-layers-pointers">
+                    <div class="anima-container-center-horizontal anima-container-center-vertical">
+                        <div class="idea-Y8hNjB anima-flexbox-container">
+                            <div class="auto-flex1-XxVWrE anima-flexbox-container">
+                                <img class="path-UdBrCP" src="dark---desktop-hd-path-2@2x.png">
+                                <img class="path-r7D7kh" src="dark---desktop-hd-path-1@2x.png">
+                                <img class="path-hnwaHn" src="dark---desktop-hd-path-3@2x.png">
+                            </div>
+                            <div class="overlap-group-xQ9ucY">
+                                <img class="path-9glFJM" src="dark---desktop-hd-path@2x.png">
+                                <img class="shape-fessoy" src="dark---desktop-hd-shape@2x.png">
+                            </div>
+                            <div class="auto-flex-sx9X19 anima-flexbox-container">
+                                <img class="path-TD0p3x" src="dark---desktop-hd-path-5@2x.png">
+                                <img class="path-R19EU6" src="dark---desktop-hd-path-4@2x.png">
+                                <img class="path-Pynoi6" src="dark---desktop-hd-path-6@2x.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <script>
+            function AnimaShowOnScroll() {
+                this.toShow = [];
+                this.nextEventY = undefined;
+            }
+            
+            AnimaShowOnScroll.prototype.show = function(e) {
+                e.style.display = "";
+            };
+            
+            AnimaShowOnScroll.prototype.hide = function(e) {
+                e.style.display = "none";
+            };
+            
+            AnimaShowOnScroll.prototype.getTop = function(e) {
+                if (e.animaTop != undefined && e.animaTop != 0) {
+                    return e.animaTop;
+                }
+                var top = 0;
+                var iter = e;
+                do {
+                    top += iter.offsetTop || 0;
+                    iter = iter.offsetParent;
+                } while (iter);
+                e.animaTop = top;
+                return top;
+            };
+            
+            AnimaShowOnScroll.prototype.onScroll = function() {
+                var screenBottom = window.pageYOffset + window.innerHeight;
+                if (this.nextEventY == undefined || this.nextEventY > screenBottom) {
+                    return;
+                }
+                this.nextEventY = undefined;
+                for (var i = 0; i < this.toShow.length; i++) {
+                    var e = this.toShow[i];
+                    var top = this.getTop(e);
+                    if (top < screenBottom) {
+                        this.show(e);
+                        this.toShow.shift();
+                        i--;
+                    } else {
+                        this.nextEventY = top;
+                        break;
+                    }
+                }
+            };
+            
+            AnimaShowOnScroll.prototype.resetScrolling = function() {
+                // Clear state
+                var screenBottom = window.pageYOffset + window.innerHeight;
+                for (var i = 0; i < this.toShow.length; i++) {
+                    var e = this.toShow[i];
+                    this.show(e);
+                }
+                this.toShow = [];
+                this.nextEventY == undefined;
+            
+                // Collect items
+                var itemsToShowOnScroll = Array.prototype.slice.call(document.getElementsByTagName("*"));
+                itemsToShowOnScroll = itemsToShowOnScroll.filter(function(e) {
+                    return e.getAttribute("anima-show-on-scroll") != undefined
+                });
+                var getTop = this.getTop;
+                itemsToShowOnScroll.sort(function(a, b) {
+                    return getTop(a) - getTop(b);
+                });
+                for (var i = 0; i < itemsToShowOnScroll.length; i++) {
+                    var e = itemsToShowOnScroll[i];
+                    var top = this.getTop(e);
+                    if (top < screenBottom) {
+                        continue;
+                    }
+                    this.toShow.push(e);
+                    this.hide(e);
+                    this.nextEventY = this.nextEventY != undefined ? this.nextEventY : top;
+                }
+            };
+            
+            AnimaShowOnScroll.prototype.handleEvent = function(e) {
+                switch (e.type) {
+                    case "scroll":
+                        this.onScroll();
+                        break;
+                    case "resize":
+                        this.resetScrolling();
+                        break;
+                }
+            };
+            
+            AnimaShowOnScroll.prototype.init = function() {
+                this.resetScrolling();
+                window.addEventListener("scroll", this);
+                window.addEventListener("resize", this);
+            };
+            
+            // After anima-src
+            setTimeout(function() {
+                var animaShowOnScroll = new AnimaShowOnScroll();
+                animaShowOnScroll.init();
+            }, 250);
+        </script>
+    </body>
+</html>

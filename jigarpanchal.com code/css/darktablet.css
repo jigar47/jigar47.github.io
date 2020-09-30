@@ -1,0 +1,2159 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600,700');
+
+@font-face {
+                          font-family: "PoppinsLatin-Medium";
+                          src: url('../fonts/PoppinsLatin-Medium.ttf') format("truetype");
+                        }
+                        @font-face {
+                          font-family: "PoppinsLatin-SemiBold";
+                          src: url('../fonts/PoppinsLatin-SemiBold.ttf') format("truetype");
+                        }
+                        @font-face {
+                          font-family: "PoppinsLatin-Bold";
+                          src: url('../fonts/PoppinsLatin-Bold.ttf') format("truetype");
+                        }
+                        
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - darkdesktophd */
+.font-class-1 {
+  font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  letter-spacing      : -0.57px;
+  line-height         : 26.0px;
+}
+.font-class-2 {
+  color               : var(--auto-palette-color-2);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  font-weight         : 600;
+  letter-spacing      : -0.67px;
+  line-height         : 30.0px;
+}
+.font-class-3 {
+  font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  letter-spacing      : -0.67px;
+  line-height         : 23.0px;
+}
+.font-class-4 {
+  color               : var(--auto-palette-color-1);
+  font-family         : "PoppinsLatin-SemiBold", Helvetica, Arial, serif;
+  font-size           : 55.0px;
+  letter-spacing      : -3.00px;
+  line-height         : 83.0px;
+}
+.font-class-5 {
+  font-family         : "PoppinsLatin-Bold", Helvetica, Arial, serif;
+  font-size           : 22.0px;
+  letter-spacing      : -0.80px;
+  line-height         : 33.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(241,60,49,1.0);
+  --auto-palette-color-2: rgba(255,255,255,1.0);
+  --auto-palette-color-3: rgba(0,0,0,1.0);
+  --auto-palette-color-4: rgba(37,43,51,1.0);
+  --auto-palette-color-5: rgba(51,58,69,1.0);
+}
+@keyframes bp1-anima-animate-enter1-frames {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+@keyframes bp1-anima-animate-enter2-frames {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+.darkdesktophd .overlap-group-xQ9ucY {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 32px;
+  margin-left         : 1px;
+  position            : relative;
+  width               : 22px;
+}
+.darkdesktophd .auto-flex-sx9X19 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 8.0px;
+  margin-left         : 1px;
+  position            : relative;
+  width               : 4px;
+}
+.darkdesktophd .auto-flex1-XxVWrE {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 8.0px;
+  position            : relative;
+  width               : 4px;
+}
+.darkdesktophd .whatsapp-xoVzdz {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 32px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darkdesktophd .whatsapp-xoVzdz:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .group-5-hx9j3X {
+  background-color    : rgba(255,255,255,0);
+  bottom              : -12px;
+  display             : block;
+  height              : 912px;
+  position            : absolute;
+  right               : 0px;
+  width               : 54.31%;
+  opacity             : 0;
+}
+.darkdesktophd .group-5-hx9j3X.bp1-anima-animate-enter2 {
+  animation           : bp1-anima-animate-enter2-frames 1.50s ease-in-out 0.00s 1 normal forwards;
+  display             : block;
+  opacity             : 0;
+}
+.darkdesktophd .img-0735-y9qFmI {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 12px;
+  display             : block;
+  height              : 900px;
+  position            : absolute;
+  right               : 0px;
+  width               : 793px;
+  opacity             : 0;
+}
+.darkdesktophd .img-0735-y9qFmI.bp1-anima-animate-enter1 {
+  animation           : bp1-anima-animate-enter1-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+  display             : block;
+  opacity             : 0;
+}
+.darkdesktophd .rectangle-JSEgeI {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 12px);
+  left                : 0px;
+  position            : absolute;
+  top                 : 12px;
+  width               : 33.67%;
+}
+.darkdesktophd .group-xWfRCW {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/dark---desktop-hd-oval@2x.png");
+  background-size     : 100% 100%;
+  bottom              : 42px;
+  cursor              : pointer;
+  height              : 72px;
+  pointer-events      : auto;
+  position            : fixed;
+  right               : 28px;
+  transition          : all 0.2s ease-in-out;
+  width               : 72px;
+}
+.darkdesktophd .group-xWfRCW:hover {
+  transform           : scale(1.1);
+}
+.darkdesktophd .idea-Y8hNjB {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd .path-9glFJM {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 10px;
+  position            : absolute;
+  top                 : 4px;
+  width               : 8px;
+}
+.darkdesktophd .shape-fessoy {
+  background-color    : rgba(255,255,255,0);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 22px;
+}
+.darkdesktophd .path-r7D7kh {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 4px;
+}
+.darkdesktophd .path-UdBrCP {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darkdesktophd .path-hnwaHn {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darkdesktophd .path-R19EU6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 4px;
+}
+.darkdesktophd .path-TD0p3x {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-left         : 1.0px;
+  position            : relative;
+  width               : 3px;
+}
+.darkdesktophd .path-Pynoi6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-left         : 1.0px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darkdesktophd .cohort-work-XTWcq1 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0 0 0 30px;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 97px;
+}
+.darkdesktophd .cohort-work-XTWcq1:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .a9am-io-copy-VlyhaJ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0 0 0 30px;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 59px;
+}
+.darkdesktophd .a9am-io-copy-VlyhaJ:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .india-nic-com-copy-2-l37dXz {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 111px;
+}
+.darkdesktophd .india-nic-com-copy-2-l37dXz:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .stacked-group-NL8nam {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 500px;
+}
+.darkdesktophd .group-4-xEJipu {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : 347px;
+}
+.darkdesktophd .jigar-panchal-PsDt54 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -6px;
+  min-height          : 77px;
+  min-width           : 356px;
+  position            : relative;
+  text-align          : left;
+  width               : auto;
+}
+.darkdesktophd .director-global-sal-8M9zLJ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  height              : auto;
+  margin-bottom       : -2px;
+  margin-top          : 0px;
+  min-height          : 31px;
+  min-width           : 235px;
+  position            : relative;
+  text-align          : left;
+  width               : auto;
+}
+.darkdesktophd .every-brand-has-stor-sTocGH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  height              : auto;
+  margin              : 42px 0 0 0;
+  position            : relative;
+  text-align          : left;
+  width               : 499px;
+}
+.darkdesktophd .button-india-nic-cgmJkX {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 76px;
+  margin              : 42px 0 0 0;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 234px;
+}
+.darkdesktophd .button-india-nic-cgmJkX:hover {
+  transform           : scale(0.95);
+}
+.darkdesktophd .group-4-Xn4cxL {
+  background-color    : rgba(255,255,255,0);
+  height              : 76px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : relative;
+  top                 : 0px;
+  transition          : all 0.2s ease-in-out;
+  width               : 234px;
+}
+.darkdesktophd .group-4-Xn4cxL:hover {
+  transform           : scale(0.95);
+}
+.darkdesktophd .rectangle-RIiLvP {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 38.0px;
+  height              : 76px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 234px;
+}
+.darkdesktophd .about-india-nic-u2192-ZV8xDl {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 31px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 24px;
+  width               : auto;
+}
+.darkdesktophd .span1-ZV8xDl {
+  letter-spacing      : 0.00px;
+}
+.darkdesktophd .span2-ZV8xDl {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.darkdesktophd .span3-ZV8xDl {
+  letter-spacing      : 0.00px;
+}
+.darkdesktophd .group-2-yJDjHY {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 42px 0 0 0;
+  opacity             : 0.53;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd .fb-icon-xPM9RJ {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 32px;
+}
+.darkdesktophd .facebook-pETBu8 {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 31px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darkdesktophd .facebook-pETBu8:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .instagram-icon-Ux9PS4 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 32px;
+}
+.darkdesktophd .instagram-bcktVo {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 32px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darkdesktophd .instagram-bcktVo:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .twitter-icon-sx2d3Y {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 27px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd .twitter-JCqKaK {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 27px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darkdesktophd .twitter-JCqKaK:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .linked-in-icon-xsA6Er {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 28px;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd .linked-in-oOMmtS {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 28px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 30px;
+}
+.darkdesktophd .linked-in-oOMmtS:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .product-hunt-icon-wTLNEm {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd .product-hunt-QMe8FJ {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 32px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darkdesktophd .product-hunt-QMe8FJ:hover {
+  transform           : scale(0.9);
+}
+.darkdesktophd .whatsapp-icon-ncK4Wc {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd .website-link-group-KMqGZj {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : absolute;
+  top                 : 618px;
+  width               : auto;
+}
+.darkdesktophd .group-4-2SgBKU {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : auto;
+}
+.darkdesktophd {
+  background-color    : var(--auto-palette-color-3);
+  height              : 100vh;
+  margin              : 0px;
+  min-height          : 866.0px;
+  min-width           : 1440.0px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 100%;
+}
+.darkdesktophd .group-3-iFKazk {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 642px;
+  justify-content     : flex-start;
+  left                : 125px;
+  position            : absolute;
+  top                 : 103px;
+  width               : auto;
+}
+.darkdesktophd .group-6-auP9FG {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 642px;
+  position            : relative;
+  width               : 500px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - darkmobile */
+.font-class-1 {
+  font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  letter-spacing      : -0.57px;
+  line-height         : 26.0px;
+}
+.font-class-2 {
+  color               : var(--auto-palette-color-2);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  font-weight         : 600;
+  letter-spacing      : -0.67px;
+  line-height         : 30.0px;
+}
+.font-class-3 {
+  font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  letter-spacing      : -0.67px;
+  line-height         : 23.0px;
+}
+.font-class-4 {
+  color               : var(--auto-palette-color-1);
+  font-family         : "PoppinsLatin-SemiBold", Helvetica, Arial, serif;
+  font-size           : 55.0px;
+  letter-spacing      : -3.00px;
+  line-height         : 83.0px;
+}
+.font-class-5 {
+  font-family         : "PoppinsLatin-Bold", Helvetica, Arial, serif;
+  font-size           : 22.0px;
+  letter-spacing      : -0.80px;
+  line-height         : 33.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(241,60,49,1.0);
+  --auto-palette-color-2: rgba(255,255,255,1.0);
+  --auto-palette-color-3: rgba(0,0,0,1.0);
+  --auto-palette-color-4: rgba(37,43,51,1.0);
+  --auto-palette-color-5: rgba(51,58,69,1.0);
+}
+@keyframes bp3-anima-animate-enter-frames {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+@keyframes bp3-anima-animate-enter1-frames {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+.darkmobile .overlap-group-vgPqeP {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 26px;
+  margin-left         : 1px;
+  position            : relative;
+  width               : 18px;
+}
+.darkmobile .auto-flex-U2ixUx {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 7.0px;
+  margin-left         : 1px;
+  position            : relative;
+  width               : 3px;
+}
+.darkmobile .auto-flex1-Pn5ray {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 7.0px;
+  position            : relative;
+  width               : 3px;
+}
+.darkmobile .instagram-v2jDaI {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 26px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 26px;
+}
+.darkmobile .instagram-v2jDaI:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .twitter-icon-TiF5se {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 22px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkmobile .twitter-2XMt2R {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 22px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 26px;
+}
+.darkmobile .twitter-2XMt2R:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .linked-in-icon-xdNuc6 {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 22px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkmobile .linked-in-mmUmJO {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 22px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 23px;
+}
+.darkmobile .linked-in-mmUmJO:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .product-hunt-icon-hNn4Xx {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 26px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkmobile .product-hunt-x05TsX {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 26px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 26px;
+}
+.darkmobile .product-hunt-x05TsX:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .whatsapp-icon-MqxqxW {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 26px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darkmobile .whatsapp-4hndZC {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 26px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 26px;
+}
+.darkmobile .whatsapp-4hndZC:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .group-2f01hs {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/dark---mobile-oval@2x.png");
+  background-size     : 100% 100%;
+  cursor              : pointer;
+  height              : 62px;
+  margin              : 52px 0 0 0;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 62px;
+}
+.darkmobile .group-2f01hs:hover {
+  transform           : scale(1.1);
+}
+.darkmobile .idea-Hil7Fd {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 26px;
+  justify-content     : flex-start;
+  left                : 18px;
+  position            : relative;
+  top                 : 16px;
+  width               : auto;
+}
+.darkmobile .path-W6bMTk {
+  background-color    : rgba(255,255,255,0);
+  height              : 7px;
+  left                : 8px;
+  position            : absolute;
+  top                 : 3px;
+  width               : 7px;
+}
+.darkmobile .shape-UXB1Xu {
+  background-color    : rgba(255,255,255,0);
+  height              : 26px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 18px;
+}
+.darkmobile .path-oN2dLs {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darkmobile .path-43ixgR {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  position            : relative;
+  width               : 2px;
+}
+.darkmobile .path-BdbPx9 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 2px;
+  position            : relative;
+  width               : 2px;
+}
+.darkmobile .path-0mVWxK {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darkmobile .path-2CzrJs {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-left         : 1.0px;
+  position            : relative;
+  width               : 2px;
+}
+.darkmobile .path-rcQf7d {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-left         : 1.0px;
+  margin-top          : 2px;
+  position            : relative;
+  width               : 2px;
+}
+.darkmobile .website-link-group-rXQr49 {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  margin              : 52px 0 0 0;
+  position            : relative;
+  width               : auto;
+}
+.darkmobile .group-4-0tFhgS {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : auto;
+}
+.darkmobile .cohort-work-Pwp8Jj {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0 0 0 30px;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 97px;
+}
+.darkmobile .cohort-work-Pwp8Jj:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .a9am-io-copy-G8GFmH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0 0 0 30px;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 59px;
+}
+.darkmobile .a9am-io-copy-G8GFmH:hover {
+  transform           : scale(0.9);
+}
+.darkmobile .india-nic-com-copy-2-OV1Wx1 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 111px;
+}
+.darkmobile .india-nic-com-copy-2-OV1Wx1:hover {
+  transform           : scale(0.9);
+}
+.darkmobile {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-3);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 1290px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 414.0px;
+}
+.darkmobile .img-4164-removebg-8BKYOP {
+  background-color    : rgba(255,255,255,0);
+  display             : block;
+  flex-shrink         : 0;
+  height              : 442px;
+  position            : relative;
+  width               : 414px;
+  opacity             : 0;
+}
+.darkmobile .img-4164-removebg-8BKYOP.bp3-anima-animate-enter1 {
+  animation           : bp3-anima-animate-enter1-frames 1.50s ease-in-out 0.00s 1 normal forwards;
+  display             : block;
+  opacity             : 0;
+}
+.darkmobile .img-4164-removebg-GKCyT8 {
+  background-color    : rgba(255,255,255,0);
+  display             : block;
+  height              : 442px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 414px;
+  opacity             : 0;
+}
+.darkmobile .img-4164-removebg-GKCyT8.bp3-anima-animate-enter {
+  animation           : bp3-anima-animate-enter-frames 1.50s ease-in-out 0.00s 1 normal forwards;
+  display             : block;
+  opacity             : 0;
+}
+.darkmobile .group-3-iFKazk {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 714px;
+  margin-left         : 1.0px;
+  margin-top          : 33px;
+  position            : relative;
+  width               : 359px;
+}
+.darkmobile .stacked-group-asTXZW {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 359px;
+}
+.darkmobile .group-2xqSCJ {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  margin              : 0;
+  padding             : 0 0.3px;
+  position            : relative;
+  width               : 358px;
+}
+.darkmobile .jigar-panchal-1frW2s {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-family         : "PoppinsLatin-SemiBold", Helvetica, Arial, serif;
+  font-size           : 40.0px;
+  height              : auto;
+  letter-spacing      : -1.76px;
+  line-height         : 70.0px;
+  margin-right        : 0.0px;
+  min-height          : 70px;
+  position            : relative;
+  text-align          : center;
+  width               : 300px;
+}
+.darkmobile .director-global-sal-J7800r {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-family         : "PoppinsLatin-Bold", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  height              : auto;
+  letter-spacing      : -0.67px;
+  line-height         : 30.0px;
+  margin-bottom       : -2px;
+  margin-left         : 0.0px;
+  margin-top          : 0px;
+  min-height          : 28px;
+  position            : relative;
+  text-align          : center;
+  width               : 357px;
+}
+.darkmobile .every-brand-has-stor-9BjXZF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  height              : auto;
+  margin              : 52px 0 0 0;
+  position            : relative;
+  text-align          : center;
+  width               : 357px;
+}
+.darkmobile .button-india-nic-GKf6Hv {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 54px;
+  margin              : 52px 0 0 0;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 359px;
+}
+.darkmobile .button-india-nic-GKf6Hv:hover {
+  transform           : scale(0.95);
+}
+.darkmobile .group-4-H6SSb9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 54px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : relative;
+  top                 : 0px;
+  transition          : all 0.2s ease-in-out;
+  width               : 359px;
+}
+.darkmobile .group-4-H6SSb9:hover {
+  transform           : scale(0.95);
+}
+.darkmobile .rectangle-6kbEzA {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 27.0px;
+  height              : 54px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 359px;
+}
+.darkmobile .about-india-nic-u2192-U33RE3 {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 94px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 13px;
+  width               : auto;
+}
+.darkmobile .span1-U33RE3 {
+  letter-spacing      : 0.00px;
+}
+.darkmobile .span2-U33RE3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.darkmobile .span3-U33RE3 {
+  letter-spacing      : 0.00px;
+}
+.darkmobile .group-2-eGzfZV {
+  background-color    : rgba(255,255,255,0);
+  height              : 70px;
+  margin              : 52px 0 0 0;
+  position            : relative;
+  width               : 303px;
+}
+.darkmobile .connect-with-me-zqO1Cz {
+  background-color    : rgba(255,255,255,0);
+  color               : rgba(138,149,158,1.0);
+  height              : auto;
+  left                : 66px;
+  opacity             : 0.7;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : auto;
+}
+.darkmobile .stacked-group-aKUAPr {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 26px;
+  justify-content     : flex-start;
+  left                : 0px;
+  opacity             : 0.7;
+  position            : absolute;
+  top                 : 44px;
+  width               : auto;
+}
+.darkmobile .facebook-kRtflX {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 25px;
+  margin              : 0;
+  position            : relative;
+  width               : 26px;
+}
+.darkmobile .instagram-icon-7nyc6R {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 26px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 26px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - darktablet */
+.font-class-1 {
+  font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  letter-spacing      : -0.57px;
+  line-height         : 26.0px;
+}
+.font-class-2 {
+  color               : var(--auto-palette-color-2);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  font-weight         : 600;
+  letter-spacing      : -0.67px;
+  line-height         : 30.0px;
+}
+.font-class-3 {
+  font-family         : "PoppinsLatin-Medium", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  letter-spacing      : -0.67px;
+  line-height         : 23.0px;
+}
+.font-class-4 {
+  color               : var(--auto-palette-color-1);
+  font-family         : "PoppinsLatin-SemiBold", Helvetica, Arial, serif;
+  font-size           : 55.0px;
+  letter-spacing      : -3.00px;
+  line-height         : 83.0px;
+}
+.font-class-5 {
+  font-family         : "PoppinsLatin-Bold", Helvetica, Arial, serif;
+  font-size           : 22.0px;
+  letter-spacing      : -0.80px;
+  line-height         : 33.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(241,60,49,1.0);
+  --auto-palette-color-2: rgba(255,255,255,1.0);
+  --auto-palette-color-3: rgba(0,0,0,1.0);
+  --auto-palette-color-4: rgba(37,43,51,1.0);
+  --auto-palette-color-5: rgba(51,58,69,1.0);
+}
+@keyframes bp2-anima-animate-enter2-frames {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+.darktablet .auto-flex-sx9X19 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 8.0px;
+  margin-left         : 1px;
+  position            : relative;
+  width               : 4px;
+}
+.darktablet .auto-flex1-XxVWrE {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-bottom       : 8.0px;
+  position            : relative;
+  width               : 4px;
+}
+.darktablet .path-hnwaHn {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darktablet .path-R19EU6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 4px;
+}
+.darktablet .path-TD0p3x {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-left         : 1.0px;
+  position            : relative;
+  width               : 3px;
+}
+.darktablet .path-Pynoi6 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-left         : 1.0px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darktablet .overlap-group-xQ9ucY {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 32px;
+  margin-left         : 1px;
+  position            : relative;
+  width               : 22px;
+}
+.darktablet .group-3-iFKazk {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 516px;
+  justify-content     : flex-start;
+  left                : 75px;
+  position            : absolute;
+  top                 : 103px;
+  width               : auto;
+}
+.darktablet .group-6-auP9FG {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 516px;
+  position            : relative;
+  width               : 374px;
+}
+.darktablet .website-link-group-KMqGZj {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : absolute;
+  top                 : 492px;
+  width               : auto;
+}
+.darktablet .group-4-2SgBKU {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .cohort-work-XTWcq1 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0 0 0 30px;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 97px;
+}
+.darktablet .cohort-work-XTWcq1:hover {
+  transform           : scale(0.9);
+}
+.darktablet .a9am-io-copy-VlyhaJ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0 0 0 30px;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 59px;
+}
+.darktablet .a9am-io-copy-VlyhaJ:hover {
+  transform           : scale(0.9);
+}
+.darktablet .india-nic-com-copy-2-l37dXz {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  cursor              : pointer;
+  height              : auto;
+  margin              : 0;
+  pointer-events      : auto;
+  position            : relative;
+  text-align          : left;
+  transition          : all 0.2s ease-in-out;
+  width               : 111px;
+}
+.darktablet .india-nic-com-copy-2-l37dXz:hover {
+  transform           : scale(0.9);
+}
+.darktablet .stacked-group-NL8nam {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 374px;
+}
+.darktablet .group-4-xEJipu {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : 253px;
+}
+.darktablet .jigar-panchal-PsDt54 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-family         : "PoppinsLatin-SemiBold", Helvetica, Arial, serif;
+  font-size           : 40.0px;
+  height              : auto;
+  letter-spacing      : -2.18px;
+  line-height         : 60.0px;
+  margin-bottom       : -4px;
+  min-height          : 56px;
+  min-width           : 263px;
+  position            : relative;
+  text-align          : left;
+  width               : auto;
+}
+.darktablet .director-global-sal-8M9zLJ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-family         : "PoppinsLatin-Bold", Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  height              : auto;
+  letter-spacing      : -0.65px;
+  line-height         : 27.0px;
+  margin-bottom       : -2px;
+  margin-top          : 9px;
+  min-height          : 25px;
+  min-width           : 194px;
+  position            : relative;
+  text-align          : left;
+  width               : auto;
+}
+.darktablet .every-brand-has-stor-sTocGH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-2);
+  height              : auto;
+  margin              : 42px 0 0 0;
+  position            : relative;
+  text-align          : left;
+  width               : 373px;
+}
+.darktablet .button-india-nic-cgmJkX {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 76px;
+  margin              : 42px 0 0 0;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 234px;
+}
+.darktablet .button-india-nic-cgmJkX:hover {
+  transform           : scale(0.95);
+}
+.darktablet .group-4-Xn4cxL {
+  background-color    : rgba(255,255,255,0);
+  height              : 76px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : relative;
+  top                 : 0px;
+  transition          : all 0.2s ease-in-out;
+  width               : 234px;
+}
+.darktablet .group-4-Xn4cxL:hover {
+  transform           : scale(0.95);
+}
+.darktablet .rectangle-RIiLvP {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 38.0px;
+  height              : 76px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 234px;
+}
+.darktablet .about-india-nic-u2192-ZV8xDl {
+  background-color    : rgba(255,255,255,0);
+  height              : auto;
+  left                : 31px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 24px;
+  width               : auto;
+}
+.darktablet .span1-ZV8xDl {
+  letter-spacing      : 0.00px;
+}
+.darktablet .span2-ZV8xDl {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.darktablet .span3-ZV8xDl {
+  letter-spacing      : 0.00px;
+}
+.darktablet .group-2-yJDjHY {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  display             : flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 42px 0 0 0;
+  opacity             : 0.53;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .fb-icon-xPM9RJ {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 33px;
+}
+.darktablet .facebook-pETBu8 {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 31px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 33px;
+}
+.darktablet .facebook-pETBu8:hover {
+  transform           : scale(0.9);
+}
+.darktablet .instagram-icon-Ux9PS4 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 32px;
+}
+.darktablet .instagram-bcktVo {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 32px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darktablet .instagram-bcktVo:hover {
+  transform           : scale(0.9);
+}
+.darktablet .twitter-icon-sx2d3Y {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 27px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .twitter-JCqKaK {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 27px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darktablet .twitter-JCqKaK:hover {
+  transform           : scale(0.9);
+}
+.darktablet .linked-in-icon-xsA6Er {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 28px;
+  justify-content     : flex-start;
+  margin              : 0;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .linked-in-oOMmtS {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 28px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 29px;
+}
+.darktablet .linked-in-oOMmtS:hover {
+  transform           : scale(0.9);
+}
+.darktablet .product-hunt-icon-wTLNEm {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .product-hunt-QMe8FJ {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 32px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darktablet .product-hunt-QMe8FJ:hover {
+  transform           : scale(0.9);
+}
+.darktablet .whatsapp-icon-ncK4Wc {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  margin              : 0 0 0 30px;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .whatsapp-xoVzdz {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  flex-shrink         : 0;
+  height              : 32px;
+  pointer-events      : auto;
+  position            : relative;
+  transition          : all 0.2s ease-in-out;
+  width               : 32px;
+}
+.darktablet .whatsapp-xoVzdz:hover {
+  transform           : scale(0.9);
+}
+.darktablet .group-xWfRCW {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/dark---desktop-hd-oval@2x.png");
+  background-size     : 100% 100%;
+  bottom              : 42px;
+  cursor              : pointer;
+  height              : 72px;
+  pointer-events      : auto;
+  position            : fixed;
+  right               : 28px;
+  transition          : all 0.2s ease-in-out;
+  width               : 72px;
+}
+.darktablet .group-xWfRCW:hover {
+  transform           : scale(1.1);
+}
+.darktablet .idea-Y8hNjB {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 32px;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : auto;
+}
+.darktablet .path-9glFJM {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 10px;
+  position            : absolute;
+  top                 : 4px;
+  width               : 8px;
+}
+.darktablet .shape-fessoy {
+  background-color    : rgba(255,255,255,0);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 22px;
+}
+.darktablet .path-r7D7kh {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 2px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 4px;
+}
+.darktablet .path-UdBrCP {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 3px;
+  position            : relative;
+  width               : 3px;
+}
+.darktablet {
+  background-color    : var(--auto-palette-color-3);
+  height              : 100vh;
+  margin              : 0px;
+  min-height          : 768.0px;
+  min-width           : 1024.0px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 100%;
+}
+.darktablet .group-5-hx9j3X {
+  background-color    : rgba(255,255,255,0);
+  bottom              : -7px;
+  display             : block;
+  height              : 775px;
+  position            : absolute;
+  right               : 0px;
+  width               : 691px;
+  opacity             : 0;
+}
+.darktablet .group-5-hx9j3X.bp2-anima-animate-enter2 {
+  animation           : bp2-anima-animate-enter2-frames 1.50s ease-in-out 0.00s 1 normal forwards;
+  display             : block;
+  opacity             : 0;
+}
+.darktablet .img-0735-y9qFmI {
+  background-color    : rgba(255,255,255,0);
+  height              : 768px;
+  left                : 14px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 677px;
+}
+.darktablet .rectangle-JSEgeI {
+  background-color    : rgba(255,255,255,0);
+  height              : 775px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 267px;
+}
+@media screen and (max-width: 1023px) {
+  .darktablet {
+    display             : none ;
+  }
+  .darkdesktophd {
+    display             : none ;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .darkmobile {
+    display             : none ;
+  }
+  .darkdesktophd {
+    display             : none ;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .darkmobile {
+    display             : none ;
+  }
+  .darktablet {
+    display             : none ;
+  }
+}
